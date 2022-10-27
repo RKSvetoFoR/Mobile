@@ -45,7 +45,8 @@ class _LoginDemoState extends State<LoginDemo> {
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder( borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                        borderSide: BorderSide(color: Colors.cyan, width: 1)),
                     labelText: 'Email',
                     hintText: 'Enter valid email id as abc@gmail.com'),
               ),
@@ -56,7 +57,8 @@ class _LoginDemoState extends State<LoginDemo> {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder( borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                        borderSide: BorderSide(color: Colors.cyan, width: 1)),
                     labelText: 'Password',
                     hintText: 'Enter secure password'),
               ),
@@ -81,7 +83,7 @@ class _LoginDemoState extends State<LoginDemo> {
                 height: 35,
                 width: 170,
                 decoration: BoxDecoration(
-                    color: Colors.pinkAccent, borderRadius: BorderRadius.circular(20)),
+                    color: Colors.orangeAccent, borderRadius: BorderRadius.circular(20)),
                 child: MaterialButton(
                   onPressed: () {
                     Navigator.push(

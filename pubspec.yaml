@@ -53,6 +53,11 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  # прописываем директорию images
+  # / указывает на то, что мы собираемся включить
+  # все файлы которые будут в директории images
+  assets:
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
