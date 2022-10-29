@@ -49,7 +49,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     border: OutlineInputBorder( borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         borderSide: BorderSide(color: Colors.cyan, width: 1)),
                     labelText: 'Email',
-                    hintText: 'Enter valid email id as abc@gmail.com'),
+                    hintText: 'Enter valid email'),
               ),
             ),
             const Padding(
@@ -98,10 +98,6 @@ class _LoginDemoState extends State<LoginDemo> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 140,
-            ),
-            const Text('New User? Create Account')
           ],
         ),
       ),
