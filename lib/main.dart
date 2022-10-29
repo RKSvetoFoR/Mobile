@@ -45,6 +45,7 @@ class _LoginDemoState extends State<LoginDemo> {
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.alternate_email , color: Colors.blue),
                     border: OutlineInputBorder( borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         borderSide: BorderSide(color: Colors.cyan, width: 1)),
                     labelText: 'Email',
@@ -57,6 +58,7 @@ class _LoginDemoState extends State<LoginDemo> {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.password_outlined, color: Colors.blue),
                     border: OutlineInputBorder( borderRadius: BorderRadius.all(Radius.circular(20.0)),
                         borderSide: BorderSide(color: Colors.cyan, width: 1)),
                     labelText: 'Password',
@@ -65,7 +67,7 @@ class _LoginDemoState extends State<LoginDemo> {
             ),
             Padding(
               padding: const EdgeInsets.only(
-                  left: 0.0, right: 200, top: 0, bottom: 0),
+                  left: 0.0, right: 0, top: 0, bottom: 0),
               child: MaterialButton(
                 onPressed: (){
                   //TODO FORGOT PASSWORD SCREEN GOES HERE
@@ -78,7 +80,7 @@ class _LoginDemoState extends State<LoginDemo> {
             ),
             Padding(
               padding: const EdgeInsets.only(
-                  left: 0.0, right: 200, top: 0, bottom: 0),
+                  left: 0.0, right: 0, top: 0, bottom: 0),
               child: Container(
                 height: 35,
                 width: 170,
