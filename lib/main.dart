@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
@@ -22,6 +23,7 @@ class LoginDemo extends StatefulWidget {
 }
 
 class _LoginDemoState extends State<LoginDemo> {
+   Dio _dio = Dio();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,10 +89,12 @@ class _LoginDemoState extends State<LoginDemo> {
                 decoration: BoxDecoration(
                     color: Colors.orangeAccent, borderRadius: BorderRadius.circular(20)),
                 child: MaterialButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => HomePage()));
-                  },
+                  onPressed: () async {
+                    // final response = await _dio.get('https://google.com');
+                    // print(response.data);
+                     Navigator.push(
+                         context, MaterialPageRoute(builder: (_) => HomePage()));
+                   },
                   child: const Text(
                     'Login',
                     style: TextStyle(color: Colors.white, fontSize: 20),
